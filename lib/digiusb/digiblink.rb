@@ -8,8 +8,8 @@ class DigiBlink < DigiUSB
 
     # send out each byte
     self.putc 's' # start character
-    self.putc color.r
-    self.putc color.g
-    self.putc color.b
+    self.putc color.r.to_i
+    self.putc color.g.to_i
+    self.putc color.b.to_i
   end
 end
